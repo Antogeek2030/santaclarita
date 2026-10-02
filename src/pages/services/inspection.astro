@@ -1,0 +1,70 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Sewer Camera Inspection Santa Clarita | ${SITE_TITLE}`} description="High-definition sewer camera inspections in Santa Clarita, CA. Locate clogs, roots, cracks, and other issues with clear video evidence." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Sewer Camera Inspection</h1>
+			<p>See exactly what’s happening inside your drain and sewer lines with HD video.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Know What’s Inside Your Pipes</h2>
+					<p>A camera inspection is the most accurate way to diagnose drain and sewer problems. We insert a waterproof high-definition camera into the line and record the condition of the pipe walls, joints, and any obstructions.</p>
+					<p>This is invaluable for locating the exact position of a blockage, identifying root intrusion, checking for cracks or collapses, and evaluating the overall condition of older sewer lines before buying or selling a home.</p>
+					
+					<h3>What You’ll Receive</h3>
+					<ul>
+						<li>Live and recorded HD video of the inspected line</li>
+						<li>Clear identification of blockages, roots, offsets, or damage</li>
+						<li>Location markers so any needed repair can be targeted</li>
+						<li>Straightforward explanation of findings and recommended next steps</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Common Uses</h3>
+					<ul>
+						<li>Diagnosing recurring or mysterious backups</li>
+						<li>Pre-purchase plumbing inspections</li>
+						<li>Checking lines after root cutting or major cleaning</li>
+						<li>Evaluating older clay or cast-iron systems</li>
+						<li>Confirming the success of a repair</li>
+					</ul>
+					
+					<h3>Peace of Mind</h3>
+					<p>Guesswork is expensive. A camera inspection gives you the information needed to choose the right repair or cleaning method the first time.</p>
+					
+					<div class="mt-2">
+						<a href="/contact/" class="btn btn-primary">Schedule Camera Inspection</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>See What’s Really Going On</h2>
+			<p>Call to schedule a sewer camera inspection in Santa Clarita.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

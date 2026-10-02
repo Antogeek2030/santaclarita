@@ -1,0 +1,56 @@
+---
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../consts';
+const currentPath = Astro.url.pathname;
+---
+
+<header class="site-header">
+	<div class="header-inner">
+		<a href="/" class="logo">Drain Cleaning <span>Santa Clarita</span></a>
+
+		<nav class="nav-desktop" aria-label="Main navigation">
+			<a href="/" class={currentPath === '/' ? 'active' : ''}>Home</a>
+			<a href="/services/" class={currentPath.startsWith('/services') ? 'active' : ''}>Services</a>
+			<a href="/service-areas/" class={currentPath.startsWith('/service-areas') ? 'active' : ''}>Service Areas</a>
+			<a href="/contact/" class={currentPath.startsWith('/contact') ? 'active' : ''}>Contact</a>
+			<a href={`tel:${PHONE_TEL}`} class="btn-nav">Call {PHONE}</a>
+		</nav>
+
+		<button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</div>
+
+	<nav class="nav-mobile" id="mobileNav" aria-label="Mobile navigation">
+		<a href="/">Home</a>
+		<a href="/services/">Services</a>
+		<a href="/services/installation/">Drain Cleaning</a>
+		<a href="/services/repair/">Clog Removal</a>
+		<a href="/services/replacement/">Sewer Line Service</a>
+		<a href="/services/maintenance/">Preventive Maintenance</a>
+		<a href="/services/inspection/">Camera Inspection</a>
+		<a href="/service-areas/">Service Areas</a>
+		<a href="/contact/">Contact Us</a>
+		<a href={`tel:${PHONE_TEL}`}>Call {PHONE}</a>
+	</nav>
+</header>
+
+<script>
+	const toggle = document.getElementById('menuToggle');
+	const mobileNav = document.getElementById('mobileNav');
+	if (toggle && mobileNav) {
+		toggle.addEventListener('click', () => {
+			const isOpen = mobileNav.classList.toggle('open');
+			toggle.setAttribute('aria-expanded', String(isOpen));
+			document.body.style.overflow = isOpen ? 'hidden' : '';
+		});
+		mobileNav.querySelectorAll('a').forEach(link => {
+			link.addEventListener('click', () => {
+				mobileNav.classList.remove('open');
+				toggle.setAttribute('aria-expanded', 'false');
+				document.body.style.overflow = '';
+			});
+		});
+	}
+</script>

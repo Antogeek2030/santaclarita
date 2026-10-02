@@ -1,0 +1,65 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Drain Cleaning Services | ${SITE_TITLE}`} description="Professional drain cleaning, clog removal, sewer line service, hydro jetting, and camera inspection in Santa Clarita, CA and surrounding areas." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Our Drain Cleaning Services</h1>
+			<p>Complete drain and sewer solutions for Santa Clarita Valley homes and businesses.</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="cards">
+				<div class="card">
+					<h3>Drain Cleaning</h3>
+					<p>Thorough clearing of kitchen, bathroom, laundry, and floor drains using modern methods that remove grease, hair, and buildup safely.</p>
+					<a href="/services/installation/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Clog Removal & Repair</h3>
+					<p>Prompt diagnosis and removal of stubborn clogs. We identify the cause and restore proper flow with lasting results.</p>
+					<a href="/services/repair/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Sewer Line Service</h3>
+					<p>Main sewer line cleaning, hydro jetting, and repair options when roots, scale, or damage are present.</p>
+					<a href="/services/replacement/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Preventive Maintenance</h3>
+					<p>Scheduled maintenance plans that keep drains clear, reduce emergency calls, and protect your plumbing investment.</p>
+					<a href="/services/maintenance/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Camera Inspection</h3>
+					<p>High-definition video inspections that locate problems precisely so repairs are targeted and cost-effective.</p>
+					<a href="/services/inspection/">Learn more →</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Need Help Choosing the Right Service?</h2>
+			<p>Call us for a free consultation. We’ll help you decide the best path forward.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

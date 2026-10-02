@@ -1,0 +1,70 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Drain Cleaning Santa Clarita CA | ${SITE_TITLE}`} description="Professional drain cleaning in Santa Clarita, CA. Kitchen, bathroom, laundry, and main line clearing with modern equipment and lasting results." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Professional Drain Cleaning</h1>
+			<p>Fast, thorough clearing of clogged drains throughout Santa Clarita homes and businesses.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Expert Drain Cleaning for Santa Clarita Homes</h2>
+					<p>Clogged drains are more than an inconvenience — they can lead to slow drains, foul odors, and eventual backups. We use professional-grade equipment to clear kitchen sinks, bathroom drains, showers, tubs, laundry lines, and floor drains without harsh chemicals that can damage pipes.</p>
+					<p>Our technicians assess the situation, choose the right method (mechanical snakes, hydro jetting when appropriate, or targeted clearing), and restore full flow so you can get back to normal quickly.</p>
+					
+					<h3>What’s Included</h3>
+					<ul>
+						<li>On-site evaluation of the affected drain(s)</li>
+						<li>Professional mechanical or hydro cleaning as needed</li>
+						<li>Removal of grease, hair, soap scum, and soft blockages</li>
+						<li>Basic recommendations to help prevent future clogs</li>
+						<li>Cleanup of the work area</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Why Professional Cleaning Matters</h3>
+					<p>Store-bought chemicals and DIY snakes often only punch a temporary hole in a clog. Professional equipment removes the bulk of the material so the problem is less likely to return quickly. We also protect older or fragile piping common in some Santa Clarita neighborhoods.</p>
+					
+					<h3>Common Drain Issues We Handle</h3>
+					<ul>
+						<li>Kitchen sink and garbage disposal backups</li>
+						<li>Bathroom sink, tub, and shower clogs</li>
+						<li>Laundry and utility sink slowdowns</li>
+						<li>Floor drain and basement issues</li>
+					</ul>
+					
+					<div class="mt-2">
+						<a href="/contact/" class="btn btn-primary">Request Drain Cleaning Quote</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Ready to Clear That Clog?</h2>
+			<p>Call today for fast, professional drain cleaning in Santa Clarita.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

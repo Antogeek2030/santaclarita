@@ -1,0 +1,69 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Drain Maintenance Santa Clarita | ${SITE_TITLE}`} description="Preventive drain maintenance plans in Santa Clarita, CA. Keep drains clear, avoid emergencies, and extend the life of your plumbing system." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Preventive Drain Maintenance</h1>
+			<p>Scheduled care that keeps drains flowing and helps you avoid costly emergency calls.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Stay Ahead of Clogs and Backups</h2>
+					<p>Regular drain maintenance is the most cost-effective way to protect your plumbing. Grease, soap, hair, and mineral scale build up gradually. A periodic professional cleaning removes that accumulation before it becomes a full blockage.</p>
+					<p>Maintenance is especially valuable for older homes, properties with large trees near sewer lines, restaurants, and multi-unit buildings where multiple users put heavier demand on the system.</p>
+					
+					<h3>What’s Typically Included</h3>
+					<ul>
+						<li>Inspection of key drains and cleanouts</li>
+						<li>Professional cleaning of kitchen and main lines as scheduled</li>
+						<li>Notes on any developing issues (roots, slow sections, etc.)</li>
+						<li>Simple homeowner tips tailored to your property</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Who Benefits Most</h3>
+					<ul>
+						<li>Homes with previous recurring clog issues</li>
+						<li>Properties near mature trees (root risk)</li>
+						<li>Businesses with commercial kitchen drains</li>
+						<li>Owners who want predictable annual costs instead of surprise emergencies</li>
+					</ul>
+					
+					<h3>Flexible Scheduling</h3>
+					<p>We can set up annual or semi-annual visits based on your needs. Call us to discuss a simple maintenance plan that fits your property.</p>
+					
+					<div class="mt-2">
+						<a href="/contact/" class="btn btn-primary">Ask About Maintenance</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Prevent the Next Backup</h2>
+			<p>Call to schedule preventive drain maintenance in Santa Clarita.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

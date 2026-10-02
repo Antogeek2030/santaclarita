@@ -1,0 +1,107 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, PHONE, PHONE_TEL } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`${SITE_TITLE} | Expert Drain Cleaning Services`} description={SITE_DESCRIPTION} />
+</head>
+<body>
+	<Header />
+
+	<section class="hero">
+		<div class="container">
+			<h1>Drain Cleaning Experts in Santa Clarita, CA</h1>
+			<p>
+				Trusted local specialists serving Santa Clarita, Valencia, Canyon Country, and Newhall.
+				Fast, thorough drain cleaning and sewer services — guaranteed results.
+			</p>
+			<div class="hero-buttons">
+				<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call Us: {PHONE}</a>
+				<a href="/contact/" class="btn btn-secondary">Get a Free Quote</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="services">
+		<div class="container">
+			<div class="section-header">
+				<h2>Our Core Drain Cleaning Services</h2>
+				<p>From stubborn clogs to full sewer line cleaning, we keep Santa Clarita homes and businesses flowing freely.</p>
+			</div>
+			<div class="cards">
+				<div class="card">
+					<h3>Drain Cleaning</h3>
+					<p>Professional clearing of kitchen, bathroom, laundry, and main line drains using modern equipment that removes buildup without damaging pipes.</p>
+					<a href="/services/installation/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Clog Removal & Repair</h3>
+					<p>Fast diagnosis and removal of hair, grease, roots, and foreign objects. We fix the cause so the clog doesn’t return quickly.</p>
+					<a href="/services/repair/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Sewer Line Service</h3>
+					<p>Hydro jetting and mechanical cleaning for main sewer lines. When needed, we handle repairs and replacements with minimal disruption.</p>
+					<a href="/services/replacement/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Preventive Maintenance</h3>
+					<p>Scheduled drain maintenance to prevent backups, extend pipe life, and catch small issues before they become costly emergencies.</p>
+					<a href="/services/maintenance/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Camera Inspection</h3>
+					<p>High-definition sewer camera inspections that locate blockages, cracks, roots, and offset joints with clear video evidence.</p>
+					<a href="/services/inspection/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Emergency Drain Service</h3>
+					<p>Same-day and after-hours response for urgent backups and overflows. We’re ready when you need us most.</p>
+					<a href="/services/repair/">Learn more →</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-alt">
+		<div class="container">
+			<div class="section-header">
+				<h2>What Santa Clarita Homeowners Say</h2>
+				<p>Real feedback from local customers who trusted us with their drains and sewer lines.</p>
+			</div>
+			<div class="testimonials">
+				<div class="testimonial">
+					<blockquote>“Kitchen sink was completely backed up. They arrived the same day, cleared the line, and explained what caused it. Professional and reasonably priced.”</blockquote>
+					<cite>— Maria L., Valencia, CA</cite>
+				</div>
+				<div class="testimonial">
+					<blockquote>“Had a main line backup on a weekend. They came out, used the camera to find the root intrusion, and fixed it the same day. Highly recommend.”</blockquote>
+					<cite>— David K., Canyon Country, CA</cite>
+				</div>
+				<div class="testimonial">
+					<blockquote>“Honest, thorough, and no upselling. They cleaned all our bathroom drains and showed us the camera footage. Will call them again.”</blockquote>
+					<cite>— Jennifer R., Newhall, CA</cite>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Ready for Fast Drain Cleaning?</h2>
+			<p>Local, licensed, and insured. Serving Santa Clarita, Valencia, Canyon Country, Newhall, and nearby communities.</p>
+			<div class="hero-buttons">
+				<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+				<a href="/contact/" class="btn btn-secondary">Request a Quote</a>
+			</div>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

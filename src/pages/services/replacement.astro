@@ -1,0 +1,65 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Sewer Line Service Santa Clarita | ${SITE_TITLE}`} description="Sewer line cleaning, hydro jetting, and repair/replacement options in Santa Clarita, CA. Restore proper flow and protect your property." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Sewer Line Service</h1>
+			<p>Main sewer cleaning, hydro jetting, and repair solutions for Santa Clarita properties.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Main Sewer Line Cleaning & Service</h2>
+					<p>Your main sewer line carries wastewater from the entire property to the city system or septic. When it slows or backs up, multiple fixtures can be affected at once. We specialize in clearing main lines using hydro jetting and mechanical methods suited to the pipe material and the type of blockage.</p>
+					<p>When cleaning alone isn’t enough — due to collapsed sections, severe root intrusion, or offset joints — we discuss repair and replacement options, including trenchless methods where appropriate.</p>
+					
+					<h3>Services Include</h3>
+					<ul>
+						<li>Main sewer line hydro jetting</li>
+						<li>Mechanical root cutting and cleaning</li>
+						<li>Camera inspection of the full line</li>
+						<li>Recommendations for repair or replacement</li>
+						<li>Coordination of needed excavation or trenchless work</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Hydro Jetting Advantages</h3>
+					<p>High-pressure water jetting scours the pipe walls, removing grease, scale, and soft debris more thoroughly than a traditional snake in many cases. It’s especially effective for restaurant and multi-unit lines as well as residential mains with significant buildup.</p>
+					
+					<h3>When Replacement May Be Needed</h3>
+					<p>Older clay or Orangeburg pipes, repeated root problems, or structural damage may point toward repair or full replacement. We provide clear findings from camera inspection so you can make an informed decision.</p>
+					
+					<div class="mt-2">
+						<a href="/contact/" class="btn btn-primary">Request Sewer Service Quote</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Restore Your Main Line</h2>
+			<p>Call today for sewer line cleaning and service in Santa Clarita.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>
